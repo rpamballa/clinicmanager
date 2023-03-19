@@ -1,0 +1,13 @@
+apply plugin: "war"
+
+bootWar {
+    mainClass = "com.yptek.clinic.manager.PatientportalApp"
+    includes = ["WEB-INF/**", "META-INF/**"]
+}
+
+war {
+    enabled = true
+    archiveExtension = "war.original"
+    includes = ["WEB-INF/**", "META-INF/**"]
+
+}
